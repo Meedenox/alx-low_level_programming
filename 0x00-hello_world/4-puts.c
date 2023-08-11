@@ -1,7 +1,12 @@
 #include <stdio.h>
-
+/*
+ * main - Entry point
+ *
+ * Description: A C program
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
-// This is the main function, the entry point of the program.
 {
 puts("Programming is like building a multilingual puzzle");
 return (0);
