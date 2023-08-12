@@ -2,10 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *main-entry point
+ *main - entry point
+ *
  *Description:false or true
+ *
  *return: 0 (end)
 */
+
 int main(void)
 {
 	int n;
@@ -13,10 +16,10 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-	  printf("%i ispositive\n",n);
+	  printf("%i ispositive\n", n);
 	else if (n < 0)
-	  printf("%i is negative\n",n);
+	  printf("%i is negative\n", n);
 	else
-	  print("%i is zero\n",n);
+	  print("%i is zero\n", n);
 	return (0);
 }
