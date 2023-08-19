@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- *
  *print_line- check the cod
- *
+ *@n: number of _ in the line
  *return: void
  *
  */
