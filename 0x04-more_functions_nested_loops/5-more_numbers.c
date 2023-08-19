@@ -3,7 +3,7 @@
  *more_numbers- check the code
  *
  *
- *return : void 
+ *return : void
  */
 
 void more_numbers(void)
