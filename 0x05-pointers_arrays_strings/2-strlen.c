@@ -1,18 +1,20 @@
 #include "main.h"
 
 /**
- * _strlen - imput a pointer to a string typ c
+ *_strlen - imput a pointer to a string typ c
  *
- * @s:the adress of the string
- * return: on success  the lenght of the string
+ *@s:the adress of the string
+ *
+ *Return: l of s
  */
 
 int _strlen(char *s)
 {
-	int last;
+	int counter;
 
-	for (last = 0; *s != '\0'; s++)
-		last++;
+	for (counter = 0; *s != '\0'; s++)
+		++counter;
 
-	return (last);
+	return (counter);
+
 }
