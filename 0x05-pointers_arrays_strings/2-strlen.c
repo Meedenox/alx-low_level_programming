@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
- * _strlen - chek code
+ * strlen - imput a pointer to a string typ c
  *
  * @s:the adress of the string
- * return: the lenght of the string
+ * return:on success  the lenght of the string
  */
 
 int _strlen(char *s)
