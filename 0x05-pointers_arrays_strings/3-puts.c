@@ -13,7 +13,7 @@ int m;
 
 c = str;
 
-for (m = 0; c[m]; m++)
+for (m = 0; c[m]; m != "\0"; m++)
 {
 _putchar (c[m]);
 }
