@@ -4,7 +4,7 @@
  *puts2 - check the code
  *@str: A pointer to an int that will be changed
  *
- *Return: void 
+ *Return: void
  */
 
 void puts2(char *str)
