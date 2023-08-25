@@ -1,33 +1,34 @@
 #include "main.h"
+
 /**
- * *cap_string - fuction that capitilizes all word
- * @str: arrray
+ * cap_string - capitalizes everey word of a string
+ * @s: string to modify
  *
- * Return: str
- *
+ * Return: the resulting string
  */
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-    int index = 0;
-    while (str[index])
-    {
-	    while (!(str[index] >= 'a' && str[index] <= 'z'))
-		    index++;
-	    char separators[] = " \t\n,;.!?\"(){}";
-	    if (!index)
-		    str[index] -= 32;
-	    else
-	    {
-		    for (int i = 0; separators[i]; i++)
-		    {
-			    if (str[index - 1] == separators[i])
-			    {
-				    str[index] -= 32;
-				    break;
-			    }
-		    }
-	    }
-	    index++;
-    }
-    return (str);
+	int i, j;
+
+	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
+		'!', '?', '"', '(', ')', '{', '}'};
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+
+		for (j = 0; j < 13; j++)
+		{
+			if (s[i] == spe[j])
+			{
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				{
+					s[i + 1] -= 32;
+				}
+			}
+		}
+	}
+
+	return (s);
 }
