@@ -1,10 +1,10 @@
 #include <main.h>
 /**
  * *_memset - function that fills memory with a constant byte
- *
+ * @b: a character
  * @n: number of bytes in array
- * Return : s
- *
+ * Return: s
+ * @s: pointerr ti s array
  */
 char *_memset(char *s, char b, unsigned int n)
 {
