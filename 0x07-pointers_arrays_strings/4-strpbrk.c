@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _strpbrk -  function that searches a string for any of a set of bytes.
+ * *_strpbrk-function that searches a string for any of a set of bytes.
  *
  *@s: first string
  *@accept: second string
  *
- *Return : s or null
+ *Return: s or null
  *
  *
  */
