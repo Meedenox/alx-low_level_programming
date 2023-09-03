@@ -3,11 +3,11 @@
 #include "main.h"
 
 /**
- * main - prints the minimum number of coins 
+ * main - prints the minimum number of coins
  * @argc: number of element
  * @argv: array of elements
  *
- * Return: 0 or 1 
+ * Return: 0 or 1
  */
 int main(int argc, char *argv[])
 {
